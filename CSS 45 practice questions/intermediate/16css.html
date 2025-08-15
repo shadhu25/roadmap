@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .relative {
+      position: relative;
+      left: 10px;
+      top: 10px;
+    }
+    .absolute {
+      position: absolute ;
+      left: 10px;
+      top: 10px;
+    }
+    .fixed {
+      position: fixed;
+      left: 10px;
+      top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <p>Relative: it moves relative to its normal position. it offset from its original spot. it stays in layout. it scroll with page</p>
+  <div class="relative">relative</div>
+  <p>Relative: it positioned on the nearest positioned ancestor or page. it offset from its nearest positioned ancestor or page. it does not stay in layout. it scroll with page</p>
+  <div class="absolute">absolute</div>
+  <p>Relative: it pLocks the element in place relative to the viewport. it offset from viewport. it does not stay in layout. it does not scroll with page</p>
+  <div class="fixed">fixed</div>
+</body>
+</html>

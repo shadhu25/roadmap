@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .outer {
+      display: flex;
+    }
+    .in1 {
+      background-color: red;
+      width: 50px;
+    }
+
+    .in2 {
+      background-color: green;
+      flex-grow: 1;
+    }
+    .in3 {
+      background-color: blue;
+      width: 75px;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="in1">50px</div>
+    <div class="in2">free space</div>
+    <div class="in3">75px</div>
+  </div>
+</body>
+</html>

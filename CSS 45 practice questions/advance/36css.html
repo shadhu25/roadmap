@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 10px;
+        display: inline-block;
+      }
+      nav ul {
+        background-color: black;
+      }
+      nav ul {
+        list-style: none;
+      }
+      nav ul li {
+        display: inline-block;
+      }
+      nav ul li:hover {
+        background-color: green;
+      }
+      .dropdown1 {
+        position: absolute;
+        display: none;
+      }
+      nav ul li:hover .dropdown1 {
+        display: block;
+      }
+      .dropdown1 li {
+        display: block;
+        margin-left: -40px;
+      }
+      .dropdown1 li:hover .dropdown2 {
+        display: block;
+      }
+      .dropdown2 {
+        position: absolute;
+        display: none;
+        margin-left: 118px;
+        margin-top: -28px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Services</a>
+          <ul class="dropdown1">
+            <li><a href="#">Web Design</a></li>
+            <li>
+              <a href="#">Development</a>
+              <ul class="dropdown2">
+                <li><a href="#">Frontend</a></li>
+                <li><a href="#">Backend</a></li>
+              </ul>
+            </li>
+            <li><a href="#">SEO</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

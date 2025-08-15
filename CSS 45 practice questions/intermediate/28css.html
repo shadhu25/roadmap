@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-size: 16px; /* sets base for rem */
+      }
+
+      .container {
+        font-family: sans-serif;
+        margin: 40px;
+      }
+
+      .box {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #999;
+      }
+
+      .px {
+        font-size: 24px;
+      }
+
+      .em {
+        font-size: 1.5em; /* 1.5 × parent size */
+      }
+
+      .rem {
+        font-size: 1.5rem; /* 1.5 × html size (16px × 1.5 = 24px) */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Base font-size: 16px</h2>
+
+      <div class="box px">This is 24px</div>
+      <div class="box em">This is 1.5em</div>
+      <div class="box rem">This is 1.5rem</div>
+    </div>
+  </body>
+</html>

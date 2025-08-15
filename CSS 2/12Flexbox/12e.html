@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .outer {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.4), -2px -2px 10px rgba(128, 128, 128, 0.4);
+      padding: 8px;
+      border-radius: 5px;
+    }
+    .inner {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .type {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .num {
+      background-color: blueviolet;
+      color: white;
+      border-radius: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 5px 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="inner">
+      <p class="type">Home</p>
+      <p class="num">14</p>
+    </div>
+    <div class="inner">
+      <p class="type">Notifications</p>
+      <p class="num">3</p>
+    </div>
+    <div class="inner">
+      <p class="type">Messages</p>
+      <p class="num">5</p>
+    </div>
+  </div>
+</body>
+</html>

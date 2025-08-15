@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .form-group {
+        position: relative;
+        margin: 2rem 0;
+      }
+
+      input {
+        width: 100%;
+        padding: 1.2rem 0.5rem 0.5rem 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+      }
+
+      label {
+        position: absolute;
+        top: 1rem;
+        left: 0.5rem;
+        color: #888;
+        background-color: white;
+        padding: 0 0.25rem;
+        transition: 0.2s ease all;
+        pointer-events: none;
+      }
+
+      /* When input is focused OR has content */
+      input:focus + label,
+      input:not(:placeholder-shown) + label {
+        top: -0.6rem;
+        left: 0.4rem;
+        font-size: 0.8rem;
+        color: #0077cc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-group">
+      <input type="text" id="name" name="name" placeholder=" " required />
+      <label for="name">Full Name</label>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Tabs – :target</title>
+  <style>
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .tabs a {
+      padding: 10px 20px;
+      text-decoration: none;
+      background: #ddd;
+      border-radius: 4px;
+      color: black;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #f9f9f9;
+    }
+
+    .tab-content:target {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tabs">
+    <a href="#tab1">Tab 1</a>
+    <a href="#tab2">Tab 2</a>
+    <a href="#tab3">Tab 3</a>
+  </div>
+
+  <div id="tab1" class="tab-content">
+    <h2>Tab 1 Content</h2>
+    <p>This is content for Tab 1.</p>
+  </div>
+
+  <div id="tab2" class="tab-content">
+    <h2>Tab 2 Content</h2>
+    <p>This is content for Tab 2.</p>
+  </div>
+
+  <div id="tab3" class="tab-content">
+    <h2>Tab 3 Content</h2>
+    <p>This is content for Tab 3.</p>
+  </div>
+
+</body>
+</html>

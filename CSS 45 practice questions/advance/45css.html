@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Highlight card only if it contains an image */
+      .card:has(img) {
+        border: 2px solid green;
+        background-color: #f0fff0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Article Title</h2>
+      <p>This card has no image.</p>
+    </div>
+
+    <div class="card">
+      <img src="download.jpeg" alt="Image" />
+      <h2>Article Title</h2>
+      <p>This card has an image!</p>
+    </div>
+  </body>
+</html>
